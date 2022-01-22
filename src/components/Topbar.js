@@ -12,7 +12,6 @@ import {
   PopoverTrigger,
   PopoverContent,
   useColorModeValue,
-  useBreakpointValue,
   useDisclosure,
 } from "@chakra-ui/react";
 import {
@@ -28,14 +27,12 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("#333", "white.800")}
-        color={useColorModeValue("gray.600", "white")}
+        bg={useColorModeValue("#666", "white.800")}
+        color={useColorModeValue("blue", "white")}
         minH={"60px"}
         py={{ base: 2 }}
         px={{ base: 4 }}
         borderBottom={1}
-        borderStyle={"solid"}
-        borderColor={useColorModeValue("gray.200", "gray.900")}
         align={"center"}
       >
         <Flex
@@ -67,6 +64,7 @@ export default function WithSubnavigation() {
           <Button
             as={"a"}
             fontSize={"sm"}
+            padding={"22px"}
             fontWeight={400}
             variant={"link"}
             href={"#"}
@@ -122,7 +120,6 @@ const DesktopNav = () => {
 
             {navItem.children && (
               <PopoverContent
-                border={0}
                 boxShadow={"xl"}
                 bg={popoverContentBgColor}
                 p={4}
@@ -183,7 +180,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("#333", "gray.800")}
+      bg={useColorModeValue("#666", "gray.800")}
       p={4}
       display={{ md: "none" }}
     >
@@ -224,14 +221,7 @@ const MobileNavItem = ({ label, children, href }: NavItem) => {
       </Flex>
 
       <Collapse in={isOpen} animateOpacity style={{ marginTop: "0!important" }}>
-        <Stack
-          mt={2}
-          pl={4}
-          borderLeft={1}
-          borderStyle={"solid"}
-          borderColor={useColorModeValue("gray.200", "gray.700")}
-          align={"start"}
-        >
+        <Stack mt={2} pl={4} borderLeft={1} align={"start"}>
           {children &&
             children.map((child) => (
               <Link key={child.label} py={2} href={child.href}>

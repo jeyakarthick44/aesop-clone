@@ -1,10 +1,10 @@
 import "./App.css";
-import Topbar from "./components/Topbar";
+import Section from "./components/Section";
 
 function App() {
   return (
     <div>
-      <Topbar />
+      <Section />
     </div>
   );
 }

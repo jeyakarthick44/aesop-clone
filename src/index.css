@@ -1,13 +1,73 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+html {
+  scroll-behavior: smooth;
+}
+.Wrapper {
+  height: 100vh;
+  background-image: url(https://images.ctfassets.net/u1nb1km7t5q7/7clxD7eNaBZIcSC3ypABda/9de320505533faae4d6278ea02fb4e5d/Aesop_Lunar_New_Year_2022_Web_Homepage_Primary_Full_Bleed_Desktop_L_2880x1044px.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0%;
+  padding: 0%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container {
+  width: 350px;
+  height: 500px;
+  box-sizing: border-box;
+  left: 30%;
+  position: absolute;
+  top: 70%;
+  transform: translate(-50%, -50%);
+}
+
+.logo {
+  font-size: 42px;
+  font-weight: 400;
+  color: azure;
+  position: relative;
+  top: 90px;
+  left: 50px;
+}
+
+.container h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: azure;
+}
+.container p {
+  font-size: 18px;
+  color: azure;
+  margin-top: 12px;
+}
+
+.container button {
+  width: 300px;
+  background-color: transparent;
+  border: 1px solid #fdfeff;
+  box-sizing: border-box;
+  color: #f2f4f8;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  margin-top: 30px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .button-81 {
+    font-size: 1.125rem;
+    padding: 1rem 2rem;
+  }
+}
+
+.container button:hover {
+  background-color: #f4f5f8;
+  color: rgb(118, 75, 75);
 }
