@@ -12,7 +12,8 @@ const Section = () => {
           Celebrating the power of self-expression this Lunar New Year through
           gestures replete with character.
         </p>
-        <button>Browse all gifts</button>
+        <button>Browse all gifts </button>
+        <img src="arrow.png" alt="" />
       </div>
     </div>
   );

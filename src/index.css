@@ -1,8 +1,8 @@
-html {
-  scroll-behavior: smooth;
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=PT+Serif:ital@1&family=Roboto&display=swap");
+
 .Wrapper {
   height: 100vh;
+  width: 100%;
   background-image: url(https://images.ctfassets.net/u1nb1km7t5q7/7clxD7eNaBZIcSC3ypABda/9de320505533faae4d6278ea02fb4e5d/Aesop_Lunar_New_Year_2022_Web_Homepage_Primary_Full_Bleed_Desktop_L_2880x1044px.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -14,9 +14,9 @@ html {
   width: 350px;
   height: 500px;
   box-sizing: border-box;
-  left: 30%;
-  position: absolute;
-  top: 70%;
+  left: 37%;
+  position: relative;
+  top: 58%;
   transform: translate(-50%, -50%);
 }
 
@@ -24,9 +24,9 @@ html {
   font-size: 42px;
   font-weight: 400;
   color: azure;
-  position: relative;
-  top: 90px;
-  left: 50px;
+  position: absolute;
+  top: 175px;
+  left: 40px;
 }
 
 .container h1 {
@@ -58,16 +58,247 @@ html {
   box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
   margin-top: 30px;
   text-align: left;
+  position: absolute;
 }
 
-@media (min-width: 768px) {
-  .button-81 {
-    font-size: 1.125rem;
-    padding: 1rem 2rem;
-  }
+.container img {
+  width: 30px;
+  margin-left: 250px;
+  position: relative;
+  bottom: 40px;
 }
 
 .container button:hover {
   background-color: #f4f5f8;
   color: rgb(118, 75, 75);
+}
+
+/* ---------------------------media queries (479)--------------------------------------------*/
+
+@media (max-width: 479px) {
+  .container {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    left: 50%;
+    top: 100%;
+    background-color: #342d2d;
+    transform: translate(-50%, -50%);
+  }
+  .container h1 {
+    margin: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+  .container p {
+    margin: 20px;
+    font-size: 18px;
+  }
+  .container button {
+    width: 280px;
+    font-size: 17px;
+    margin: 20px;
+  }
+  .container img {
+    position: relative;
+    bottom: 60px;
+  }
+  .Wrapper {
+    height: 70vh;
+  }
+  .logo {
+    font-size: 32px;
+    font-weight: 300;
+    color: azure;
+    position: absolute;
+    top: 50px;
+    left: 60px;
+  }
+  .items-section {
+    margin-top: 80%;
+  }
+}
+
+/* ---------------------------media queries (767)--------------------------------------------*/
+
+@media (max-width: 767px) {
+  .container {
+    left: 50%;
+  }
+}
+
+/* ---------------------------media queries (991)--------------------------------------------*/
+
+@media (max-width: 991px) {
+  .logo {
+    color: azure;
+    position: absolute;
+    top: 100px;
+    left: 120px;
+  }
+}
+
+/* ---------------------------second page--------------------------------------------*/
+
+.items-section {
+  width: 100%;
+  height: 100vh;
+  margin-top: 70px;
+}
+
+.each-item {
+  margin-top: 100px;
+  height: 300px;
+}
+
+.each-item img {
+  width: 1500px;
+  height: 450px;
+  padding: 30px;
+}
+
+.each-item h3 {
+  text-align: center;
+}
+
+.each-item h4 {
+  text-align: center;
+}
+
+/* .left {
+  color: #d2d7e4;
+  background-color: #241919;
+  width: 4%;
+  height: 20%;
+  margin-top: 260px;
+  position: fixed;
+}
+
+.right {
+  position: fixed;
+  color: #d2d7e4;
+  background-color: #241919;
+  width: 20%;
+  height: 20%;
+} */
+
+.slick-arrow {
+  background-color: #0d172a;
+  width: 70px;
+  height: 70px;
+  color: #f8f4f4;
+  margin-left: 10px;
+}
+
+.slick-grew {
+  color: #0d172a;
+  z-index: 1;
+  left: 0px !important;
+}
+
+.slick-next {
+  color: #0d172a;
+  z-index: 1;
+  right: 0px !important;
+}
+
+.slick-slider button {
+  margin-left: 20px;
+}
+
+.slick-prev {
+  color: #0d172a;
+  z-index: 1;
+  right: 0px !important;
+}
+.slick-next:before {
+  color: rgb(255, 255, 255);
+  background-color: #0d172a;
+  padding: 23px;
+}
+
+.slick-prev:before {
+  color: rgb(255, 255, 255);
+  background-color: #0d172a;
+  padding: 23px;
+}
+
+/* ---------------------------section3--------------------------------------------*/
+
+.section3 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+}
+
+.left-container {
+  width: 40%;
+}
+
+.left-container h6 {
+  margin-bottom: 20px;
+}
+.left-container-values {
+  width: 75%;
+  height: 60%;
+  margin-top: 15%;
+  margin-left: 14%;
+}
+.left-container h1 {
+  font-size: 30px;
+  font-weight: 600;
+  color: rgb(31, 34, 34);
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 30px;
+}
+.left-container p {
+  font-size: 18px;
+  color: rgb(31, 34, 34);
+  margin-top: 12px;
+}
+
+.left-container button {
+  width: 280px;
+  background-color: transparent;
+  border: 1px solid #b4b6bb;
+  box-sizing: border-box;
+  color: rgb(31, 34, 34);
+  cursor: pointer;
+  display: inline-block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 1rem 1.6rem;
+  text-align: center;
+  text-decoration: none #0d172a solid;
+  transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 2px rgba(166, 175, 195, 0.25);
+  margin-top: 30px;
+  text-align: left;
+  position: absolute;
+}
+
+.left-container img {
+  color: rgb(12, 11, 11);
+  width: 25px;
+  position: relative;
+  top: 41px;
+  left: 230px;
+}
+
+.left-container button:hover {
+  background-color: #282a30;
+  color: rgb(250, 248, 248);
+}
+
+.right-container {
+  width: 60%;
+  margin-left: 45px;
+  margin-top: 6%;
+  margin-bottom: 6%;
+}
+.right-container img {
+  width: 100%;
+  height: 90%;
 }

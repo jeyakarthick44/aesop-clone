@@ -27,7 +27,7 @@ export default function WithSubnavigation() {
   return (
     <Box>
       <Flex
-        bg={useColorModeValue("#666", "white.800")}
+        bg={useColorModeValue("#342d2d", "white.800")}
         color={useColorModeValue("blue", "white")}
         minH={"60px"}
         py={{ base: 2 }}
@@ -70,7 +70,7 @@ export default function WithSubnavigation() {
             href={"#"}
             color={"white"}
           >
-            Sign In
+            Login In
           </Button>
           <Button
             as={"a"}
@@ -180,7 +180,7 @@ const DesktopSubNav = ({ label, href, subLabel }: NavItem) => {
 const MobileNav = () => {
   return (
     <Stack
-      bg={useColorModeValue("#666", "gray.800")}
+      bg={useColorModeValue("#342d2d", "gray.800")}
       p={4}
       display={{ md: "none" }}
     >
