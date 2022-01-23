@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-
-export default class Cleanser extends Component {
+import "../styles/section4.css";
+export default class Section4 extends Component {
   render() {
     var settings = {
       dots: true,
@@ -10,11 +10,37 @@ export default class Cleanser extends Component {
       slidesToScroll: 1,
       slidesToShow: 3,
       Default: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+            initialSlide: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
     };
     return (
-      <div className="items-section">
+      <div className="items-section2">
         <Slider {...settings}>
-          <div className="each-item">
+          <div className="each-item-page2">
             <img
               src="https://www.aesop.com/u1nb1km7t5q7/3LZkbf5hjURemoyB8OrmRu/e10c31c24659ccfe4b507c9fbf39778f/Aesop-Skin-Fabulous-Face-Cleanser-100mL-medium.png"
               alt=""

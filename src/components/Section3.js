@@ -1,6 +1,8 @@
 import React from "react";
+import "../styles/section3.css";
 
-const HealthySkin = () => {
+var FontAwesome = require("react-fontawesome");
+const Section3 = () => {
   return (
     <div className="section3">
       <div className="left-container">
@@ -12,8 +14,10 @@ const HealthySkin = () => {
             formulation–hydrators are no exception. Scientifically validated
             ingredients, combined with acquired wisdom, impart lasting benefits.
           </p>
-          <button>Discover deliberate nourishment </button>
-          <img src="arrow.png" alt="" />
+          <button>
+            Discover deliberate nourishment
+            <FontAwesome className="arrow3" name="arrow-right" />
+          </button>
         </div>
       </div>
       <div className="right-container">
@@ -26,4 +30,4 @@ const HealthySkin = () => {
   );
 };
 
-export default HealthySkin;
+export default Section3;
